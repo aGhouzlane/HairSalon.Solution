@@ -2,7 +2,26 @@
   Layout = "_Layout";
 }
 
-<h1>Welcome to Hair Salon!</h1>
-<p>@Html.ActionLink("See all Stylists", "Index", "Stylists")</p>
-<p>@Html.ActionLink("See all Clients types", "Index", "Clients")</p>
-@* <p>@Html.ActionLink("Search Now", "Search", "Restaurants")</p> *@
+<div style="padding: 25px; text-align: center;">
+  <h3>Welcome to Eau Clair's Hair Salon!</h3>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div style="border-style: solid; border-radius: 10px; padding: 15px; text-align: center;">
+        <img width="70px;" height="70px;" src="~/img/hairdresser.png" alt="bread-img">
+        <div style="padding: 10px;">
+          <p>@Html.ActionLink("See all Stylists", "Index", "Stylists")</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div style="border-style: solid; border-radius: 10px; padding: 15px; text-align: center;">
+        <img width="70px;" height="70px;" src="~/img/gown.png" alt="bread-img">
+        <div style="padding: 10px;">
+          <p>@Html.ActionLink("See all Clients types", "Index", "Clients")</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

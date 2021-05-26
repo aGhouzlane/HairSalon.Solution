@@ -12,11 +12,11 @@
 </head>
 
 <body>
+  @Html.Partial("Header")
   <div class="container">
-    <div class="card">
-      @RenderBody()
-    </div>
+    @RenderBody()
   </div>
+  @Html.Partial("Footer")
 </body>
 
 
